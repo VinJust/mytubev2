@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sedgwick+Ave+Display&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <title>MyTube - Upload</title>
+  </head>
+  
+  <body>
+    <div class="logo">mytube.</div>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./pages/animals.html">Animals</a>
+      <a href="./pages/gaming.html">Gaming</a>
+      <a href="./pages/computers.html">Computers</a>
+      <a href="./form.html">Upload</a>
+    </nav>
+    <header>
+      <h1>Upload</h1>
+    </header>
+
+    <form>
+      <label for="title">Video Title<br>
+        <input id="title" name="title" type="text" size="27rem">
+      </label><br><br>
+      <label for="description">Description<br>
+        <textarea id="description" name="description" cols="27.5rem" rows="5rem"></textarea>
+      </label><br><br>
+      <label for="video">Video<br>
+        <input class="video" id="video" name="video" type="file">
+      </label><br><br>
+      <label for="colleciton">
+        <select id="collection" name="collection">
+          <option disabled>Choose Collection</option>
+          <option value="animals">Animals</option>
+          <option value="gaming">Gaming</option>
+          <option value="computers">Computers</option>
+        </select><br><br>
+        <label for="public">Public
+          <input id="public" name="videotype" value="public" type="radio">
+        </label>
+        <label for="private">Private
+          <input id="private" name="videotype" value="private" type="radio">
+        </label><br><br><br><br>
+        <button type="submit">Upload Video</button>
+      </label>
+    </form>
+
+    <hr>
+    <footer>&copy: Copyright</footer>
+  </body>
+</html>

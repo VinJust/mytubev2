@@ -1,0 +1,167 @@
+/* Global Design */
+body {
+  background-image: linear-gradient(#7C7C7C, #4b4b4b);
+  background-attachment: fixed;
+}
+
+h1, a, hr, footer, p {
+  color: #bbff00;
+}
+
+nav a, label, .videopage{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+table, form, .videopage {
+  animation-duration: 2s;
+}
+
+.logo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4rem;
+  text-shadow: 3px 3px 3px black;
+  border: 3px solid #cdff44;
+  background-image: linear-gradient(#4141d1, #0000DC);
+  color: #bbff00;
+  width: 16rem;
+  height: 5rem;
+  margin: auto;
+  margin-bottom: 0.5rem;
+  animation-duration: 1s;
+}
+
+.logo, table, h1, .videopage {
+  text-align: center;
+}
+
+.logo, iframe, button {
+  border-radius: 3rem;
+}
+
+/* Nav Bar Styling */
+nav {
+  border: 3px solid #cdff44;
+  width: 26.7rem;
+  padding: 10px;
+  background-color: #0000dc;
+  border-radius: 10px;
+  animation-duration: 1s;
+  z-index: 100;
+  margin: auto;
+}
+
+nav a {
+  background-color: #cdff44;
+  color: #0000dc;
+  font-size: 1.217rem;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 2px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #26e500;
+}
+
+/* Table Styling */
+table {
+  z-index: 1;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+table a {
+  text-decoration: none;
+}
+
+table, form, button {
+  font-size: 1.3rem;
+}
+
+iframe {
+  border: 0.3rem solid #cdff44;
+  margin: 0.5rem;
+}
+
+form {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-image: linear-gradient(#1a02ef, #0040e3, #a300ee);
+  width: 318px;
+  padding-left: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  margin: auto;
+  box-shadow: 3px 3px 3px #0040e3;
+}
+
+label {
+  color: #cdff44;;
+}
+
+input {
+  background-color: #565FFF;
+  color: #1410EC;
+  height: 25px;
+  border: 1px solid #008000;
+  accent-color: #565FFF;
+  font-size: 1rem;
+}
+
+textarea {
+  background-color: #476CFF;
+  color: #0928E7;
+  accent-color: #476CFF;  
+  font-size: 1.25rem;
+}
+
+select {
+  background-color: #7F5DFF;
+}
+
+.video {
+  background-color: #6665FF;
+}
+
+button {
+  background-color: #cdff44;
+  width: 18.5rem;
+  height: 50px;
+  border: 1px solid white;
+  color: #0000dc;
+}
+
+/* Other Styling */
+h1 {
+  font-family: 'Sedgwick Ave Display', cursive;
+  text-decoration: underline;
+  animation-duration: 1.5s;
+  z-index: 50;
+}
+
+hr, footer {
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 1.125rem;
+  animation-duration: 2.5s;
+  z-index: 1;
+}
+
+.videopage {
+  font-size: 1.5rem;
+}
+
+/* Global Animation */
+h1, nav, form, table, hr, footer, .videopage, .logo {
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-name: animation;
+  animation-timing-function: ease;
+  position: relative;
+}
+
+@keyframes animation {
+  0% { top: 1000px; }
+  100% { top: 0px; }
+}
